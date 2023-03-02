@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}*
+
+ @font-face {
+     font-family: Montserrat;
+     src: url("../fonts/Montserrat-Medium.ttf");
+ }
+
+@font-face {
+    font-family: SpectralSemiBold;
+    src: url("../fonts/Spectralscsemibold.ttf");
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #d5d9da;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    font-size: 0;
+}
+
+.main-image  {
+    background-image: url("../img/cappadocia.png");
+    background-size: cover;
+    background-position: center;
+    height: 811px;
+}
+
+.header {
+    background-color: #dde0db;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.header .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .menu {
+    margin-left: 372px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .menu ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .menu ul li:nth-child(2) {
+    margin-left: 63px;
+    margin-right: 55px;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(70, 80, 85);
+    line-height: 1.2;
+}
+
+.header-actions {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 120px;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 11px;
+    border-radius: 20px;
+    padding: 14px;
+    cursor: pointer;
+    border: 0;
+    width: 205px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button.button-transparent {
+    color: rgb(121, 136, 144);
+    border: 1px solid rgb(129, 130, 130);
+    background-color: transparent;
+}
+
+.gallery {
+    padding: 101px 0 55px 0;
+}
+
+.gallery h2 {
+    font-size: 40px;
+    font-family: "SpectralSemiBold", sans-serif;
+    color: rgb(47, 40, 34);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.gallery-description {
+    font-size: 18px;
+    color: rgb(62, 52, 44);
+    line-height: 1.2;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.gallery-items {
+    margin-left: -11px;
+    margin-right: -11px;
+    font-size: 0;
+}
+
+.gallery-item {
+    margin: 12px 11px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 384px;
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.gallery-item.gallery-item-big {
+    width: 792px;
+}
+
+.gallery-item-text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+.gallery-eye {
+    display: none;
+    opacity: 0.6;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 290px;
+}
+
+.gallery-eye img {
+    vertical-align: middle;
+}
+
+.gallery-item:hover .gallery-eye {
+    display: block;
+}
+
+.tours {
+    padding: 54px 0 88px 0;
+}
+
+.tours h2 {
+    font-size: 40px;
+    font-family: "SpectralSemiBold", sans-serif;
+    color: rgb(47, 40, 34);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tours-items {
+    font-size: 0;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.tour-item {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 384px;
+    margin: 0 12px;
+    position: relative;
+}
+
+.tour-item-info {
+    background-color: #31393f;
+    padding: 22px 22px 40px 22px;
+}
+
+.tour-item-text {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.tour-item-action {
+    text-align: center;
+}
+
+.button.button-filled {
+    background-color: #da8246;
+    font-size: 18px;
+    color: rgb(37, 41, 43);
+    line-height: 17px;
+    border: 0;
+}
+
+.button.button-filled:hover {
+    box-shadow: 0px 4px 14.25px 0.75px rgba(217, 149, 103, 0.8);
+}
+
+.fixed-block {
+    width: 46px;
+    height: 46px;
+    background-color: #da8246;
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed-block img{
+    vertical-align: middle;
+}
+
+.footer {
+    background-color: #31393f;
+    padding: 54px 0 49px 0;
+}
+
+.footer .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-contacts {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 900px;
+    font-size: 0;
+}
+
+ .contacts {
+    font-size: 18px;
+    color: rgb(167, 185, 197);
+    line-height: 1.2;
+     text-align: center;
+     margin-bottom: 8px;
+}
+
+ .phones {
+    font-size: 14px;
+    color: rgb(131, 145, 156);
+    line-height: 1.2;
+     margin-top: 7px;
+}
